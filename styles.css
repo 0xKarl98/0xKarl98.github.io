@@ -62,8 +62,17 @@ body {
 
 .menu li {
     margin-bottom: 10px;
-    color: #3498db;
+    color: white;
 }
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: #ffd700;
+}
+
 
 .folder-icon {
     margin-right: 10px;
@@ -125,6 +134,14 @@ body {
     text-decoration: underline;
 }
 
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block; 
+
+}
 
 body.dark-mode {
     background-color: #1a1a1a;

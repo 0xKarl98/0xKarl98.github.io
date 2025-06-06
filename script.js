@@ -1,6 +1,7 @@
-const themeToggleButton = document.querySelector('.search-bar .icon:last-child'); // A better selector is needed
+const themeToggleButton = document.querySelector('.search-bar .icon:last-child'); 
 const body = document.body;
 
+//Button to change the scheme 
 themeToggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
  
@@ -9,10 +10,30 @@ themeToggleButton.addEventListener('click', () => {
     } else {
         localStorage.removeItem('theme');
     }
-    
-});
 
+});
 
 if (localStorage.getItem('theme') === 'dark-mode') {
     body.classList.add('dark-mode');
 }
+
+
+const navItems = document.querySelectorAll('.menu li'); 
+const contentSections = document.querySelectorAll('.content-section'); 
+
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const targetId = item.textContent.trim().toLowerCase(); 
+        contentSections.forEach(section => {
+            if (section.id === targetId) {
+                section.classList.add('active'); 
+            } else {
+                section.classList.remove('active'); 
+            }
+        });
+    });
+});
+
+
+document.getElementById('home').classList.add('active');
+
