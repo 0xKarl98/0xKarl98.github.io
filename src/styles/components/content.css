@@ -493,7 +493,7 @@
 .thought-item {
     margin-bottom: var(--space-10);
     padding: var(--space-6);
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-tertiary);
     border-radius: var(--border-radius-lg);
     border: 1px solid var(--border-primary);
 }
@@ -536,7 +536,7 @@
 .link-item {
     margin-bottom: var(--space-4);
     padding: var(--space-4);
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-tertiary);
     border-radius: var(--border-radius);
     border: 1px solid var(--border-primary);
     transition: all var(--transition-fast);

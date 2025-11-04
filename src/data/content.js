@@ -108,14 +108,7 @@ export const CONTENT_DATA = {
                     github: "https://github.com/paradigmxyz/reth"
                 }
             },
-            {
-                title: "Cross-chain Transaction",
-                description: "Transparent cross-chain transaction routing for EIP-7702 accounts.",
-                technologies: ["Rust"],
-                links: {
-                    github: "https://github.com/tcoratger/whir-p3"
-                }
-            },
+
             {
                 title: "Noir Symmetric Crypto",
                 description: "A collection of symmetric cryptographic algorithms implemented in Noir, including AES-128, AES-256, and ChaCha20.",
@@ -130,27 +123,37 @@ export const CONTENT_DATA = {
     // Miscellaneous page content
     misc: {
         title: "Miscellaneous",
-        subtitle: "Random thoughts, interesting links, and other curiosities",
+        subtitle: "Technical talks, research insights, and professional activities",
         
         thoughts: [
             {
-                title: "On Continuous Learning",
-                content: "Technology evolves rapidly, and staying current requires constant learning. I believe in the power of curiosity and the importance of building a strong foundation in computer science fundamentals.",
-                date: "2024-01-10"
+                title: "zBlock2 fellowship",
+                content: "Participated in zBlock2 fellowship program focusing on blockchain technology and zero-knowledge proofs, presenting research on Proof of Solvency applications.",
+                date: "2024-06-24"
             },
             {
-                title: "The Beauty of Simple Solutions",
-                content: "Complex problems don't always require complex solutions. Sometimes the most elegant approach is the simplest one that gets the job done effectively.",
-                date: "2023-12-25"
-            },
-            {
-                title: "Collaboration in Tech",
-                content: "Great software is rarely built in isolation. The best projects come from teams that communicate well, share knowledge, and support each other's growth.",
-                date: "2023-11-30"
+                title: "An overview of additive PCS",
+                content: "Technical talk on additive polynomial commitment schemes including Bulletproof, KZG, DARK, DORY, and their applications in zero-knowledge proofs, covering transformations to hiding PCS and efficient proof aggregation.",
+                date: "2024-01-01"
             }
         ],
         
         links: [
+            {
+                title: "ZKProof Community",
+                url: "https://zkproof.org/",
+                description: "Zero-knowledge proof research community"
+            },
+            {
+                title: "Ethereum Research",
+                url: "https://ethresear.ch/",
+                description: "Ethereum research and discussion forum"
+            },
+            {
+                title: "Cryptography Stack Exchange",
+                url: "https://crypto.stackexchange.com/",
+                description: "Q&A for cryptography professionals"
+            },
             {
                 title: "MDN Web Docs",
                 url: "https://developer.mozilla.org/",
@@ -160,21 +163,6 @@ export const CONTENT_DATA = {
                 title: "GitHub",
                 url: "https://github.com/",
                 description: "Platform for version control and collaboration"
-            },
-            {
-                title: "Stack Overflow",
-                url: "https://stackoverflow.com/",
-                description: "Q&A community for programmers"
-            },
-            {
-                title: "CSS-Tricks",
-                url: "https://css-tricks.com/",
-                description: "Articles and tutorials on web development"
-            },
-            {
-                title: "Smashing Magazine",
-                url: "https://www.smashingmagazine.com/",
-                description: "Magazine for web designers and developers"
             }
         ]
     },
