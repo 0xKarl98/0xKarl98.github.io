@@ -136,34 +136,6 @@ export const CONTENT_DATA = {
                 content: "Technical talk on additive polynomial commitment schemes including Bulletproof, KZG, DARK, DORY, and their applications in zero-knowledge proofs, covering transformations to hiding PCS and efficient proof aggregation.",
                 date: "2024-01-01"
             }
-        ],
-        
-        links: [
-            {
-                title: "ZKProof Community",
-                url: "https://zkproof.org/",
-                description: "Zero-knowledge proof research community"
-            },
-            {
-                title: "Ethereum Research",
-                url: "https://ethresear.ch/",
-                description: "Ethereum research and discussion forum"
-            },
-            {
-                title: "Cryptography Stack Exchange",
-                url: "https://crypto.stackexchange.com/",
-                description: "Q&A for cryptography professionals"
-            },
-            {
-                title: "MDN Web Docs",
-                url: "https://developer.mozilla.org/",
-                description: "Comprehensive resource for web developers"
-            },
-            {
-                title: "GitHub",
-                url: "https://github.com/",
-                description: "Platform for version control and collaboration"
-            }
         ]
     },
     
