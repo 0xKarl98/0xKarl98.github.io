@@ -175,24 +175,48 @@ export class ContentLoader {
                         </div>
                     </div>
 
+                    <!-- Hackathons -->
+                    <div class="resume-block">
+                        <h2 class="resume-title">Hackathons</h2>
+                        <div class="hackathon-list">
+                            ${data.hackathons.map(hackathon => `
+                                <div class="hackathon-item">
+                                    <div class="hackathon-header">
+                                        <h3 class="hackathon-title">${hackathon.title}</h3>
+                                        <span class="hackathon-period">${hackathon.period}</span>
+                                    </div>
+                                    <div class="hackathon-event">${hackathon.event}</div>
+                                    <p class="hackathon-description">${hackathon.description}</p>
+                                    ${hackathon.link ? `<a href="${hackathon.link}" target="_blank" class="hackathon-link">View Project →</a>` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Grants -->
+                    <div class="resume-block">
+                        <h2 class="resume-title">Grants & Awards</h2>
+                        <div class="grants-list">
+                            ${data.grants.map(grant => `
+                                <div class="grant-item">
+                                    <div class="grant-header">
+                                        <h3 class="grant-title">${grant.title}</h3>
+                                        <span class="grant-period">${grant.period}</span>
+                                    </div>
+                                    <div class="grant-organization">${grant.organization}</div>
+                                    <p class="grant-description">${grant.description}</p>
+                                    ${grant.link ? `<a href="${grant.link}" target="_blank" class="grant-link">View Proposal →</a>` : ''}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
                     <!-- Skills -->
                     <div class="resume-block">
                         <h2 class="resume-title">Skills</h2>
                         <div class="skills-grid">
                             ${data.skills.map(skill => `
                                 <span class="skill-tag">${skill}</span>
-                            `).join('')}
-                        </div>
-                    </div>
-
-                    <!-- Quotes -->
-                    <div class="resume-block">
-                        <h2 class="resume-title">Favorite Quotes</h2>
-                        <div class="quotes-list">
-                            ${data.quotes.map(quote => `
-                                <blockquote class="quote-item">
-                                    <p>"${quote}"</p>
-                                </blockquote>
                             `).join('')}
                         </div>
                     </div>

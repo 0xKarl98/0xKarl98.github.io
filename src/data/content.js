@@ -14,22 +14,16 @@ export const CONTENT_DATA = {
         
         experience: [
             {
-                title: "Software Engineer",
-                company: "Tech Innovation Corp",
-                period: "2022 - Present",
-                description: "Building scalable web applications and leading frontend architecture initiatives."
-            },
-            {
-                title: "Full Stack Developer",
-                company: "Digital Solutions Ltd",
+                title: "Smart Contract Engineer",
+                company: "Hashcloak",
                 period: "2020 - 2022",
-                description: "Developed and maintained multiple client projects using modern web technologies."
+                description: "Smart contract engineering at Hashcloak."
             },
             {
-                title: "Junior Developer",
-                company: "Startup Hub",
-                period: "2018 - 2020",
-                description: "Contributed to various projects and gained experience in agile development."
+                title: "Security Engineer",
+                company: "Silent Protocol",
+                period: "2022 - 2025",
+                description: "Security engineering at Silent Protocol."
             }
         ],
         
@@ -43,14 +37,29 @@ export const CONTENT_DATA = {
         ],
         
         skills: [
-            "JavaScript", "TypeScript", "React", "Vue.js", "Node.js", 
-            "Python", "Go", "Docker", "AWS", "MongoDB", "PostgreSQL"
+            "Rust", "TypeScript", "JavaScript", "Solidity", "Zero-knowledge"
         ],
         
-        quotes: [
-            "Code is poetry written in logic.",
-            "Simplicity is the ultimate sophistication.",
-            "Technology should empower, not complicate."
+        // 新增 Hackathon 模块
+        hackathons: [
+            {
+                title: "Noir Hackathon",
+                event: "Noir Hackathon",
+                period: "May 2025",
+                description: "Team 'Genie' demo: crypto on-ramping via Binance internal transfer.",
+                link: "https://www.youtube.com/watch?v=Tf8v8zD6Bb4&t=2s"
+            }
+        ],
+        
+        // 新增 Grants 模块
+        grants: [
+            {
+                title: "NRG#4 Grant",
+                organization: "Noir Lang",
+                period: "June 2025",
+                description: "Proposal awarded grant: Noir WebProof SDK.",
+                link: "https://github.com/orgs/noir-lang/discussions/8595"
+            }
         ]
     },
     
