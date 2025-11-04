@@ -316,30 +316,17 @@ export class ContentLoader {
                     <p class="page-subtitle">${data.subtitle}</p>
                 </header>
 
-                <!-- Thoughts Section -->
+                <!-- Professional Talks Section -->
                 <section class="misc-section">
-                    <h2 class="misc-title">Random Thoughts</h2>
+                    <h2 class="misc-title">Professional Talks</h2>
                     <div class="thoughts-list">
                         ${data.thoughts.map(thought => `
                             <div class="thought-item">
-                                <h3 class="thought-title">${thought.title}</h3>
+                                <h3 class="thought-title">
+                                    ${thought.link ? `<a href="${thought.link}" target="_blank" rel="noopener noreferrer">${thought.title}</a>` : thought.title}
+                                </h3>
                                 <p class="thought-content">${thought.content}</p>
                                 <time class="thought-date">${ContentUtils.formatDate(thought.date)}</time>
-                            </div>
-                        `).join('')}
-                    </div>
-                </section>
-
-                <!-- Links Section -->
-                <section class="misc-section">
-                    <h2 class="misc-title">Interesting Links</h2>
-                    <div class="links-list">
-                        ${data.links.map(link => `
-                            <div class="link-item">
-                                <h3 class="link-title">
-                                    <a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.title}</a>
-                                </h3>
-                                <p class="link-description">${link.description}</p>
                             </div>
                         `).join('')}
                     </div>

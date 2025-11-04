@@ -128,13 +128,15 @@ export const CONTENT_DATA = {
         thoughts: [
             {
                 title: "zBlock2 fellowship",
-                content: "Participated in zBlock2 fellowship program focusing on blockchain technology and zero-knowledge proofs, presenting research on Proof of Solvency applications.",
-                date: "2024-06-24"
+                content: "Presentation on blockchain technology and zero-knowledge proofs focusing on Proof of Solvency applications",
+                date: "2024-06-24",
+                link: "https://www.youtube.com/watch?v=TAVTzLSI-gU&t=4s"
             },
             {
                 title: "An overview of additive PCS",
-                content: "Technical talk on additive polynomial commitment schemes including Bulletproof, KZG, DARK, DORY, and their applications in zero-knowledge proofs, covering transformations to hiding PCS and efficient proof aggregation.",
-                date: "2024-01-01"
+                content: "Technical talk on additive polynomial commitment schemes including Bulletproof, KZG, DARK, DORY, and their applications in zero-knowledge proofs",
+                date: "2024-01-01",
+                link: "https://www.youtube.com/watch?v=H3wWgZ2DNvo&t=186s"
             }
         ]
     },
