@@ -1,67 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karl's Secret</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Left Sidebar -->
-      <aside class="sidebar">
-        <h1 class="site-title">Karl's Secret</h1>
-        <div class="search-bar">
-          <input type="text" placeholder="Search" />
-          <span class="icon">🔍</span>
-          <span class="icon">🌙</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl's Digital Space</title>
+    <meta name="description" content="Personal website and portfolio of Karl, software engineer and technology enthusiast">
+    <meta name="keywords" content="software engineer, web developer, programming, technology">
+    <meta name="author" content="Karl">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./src/scripts/main.js" as="script">
+    <link rel="preload" href="./src/data/content.js" as="script">
+</head>
+<body data-theme="light">
+    <!-- Application Container -->
+    <div class="app-container">
+        
+        <!-- Header Component -->
+        <header class="header" data-component="header">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Karl</h1>
+                </div>
+                
+                <div class="header-actions">
+                    <!-- Search Component -->
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search content">
+                        <button class="search-button" aria-label="Search">
+                            <span class="search-icon">🔍</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    
+                    <!-- Network Indicator -->
+                    <div class="network-indicator" title="Online">🟢</div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main Layout -->
+        <div class="main-layout">
+            
+            <!-- Navigation Component -->
+            <nav class="navigation" data-component="navigation">
+                <div class="nav-content">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link" data-page="home" data-icon="🏠">
+                                <span class="nav-icon">🏠</span>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blogs" class="nav-link" data-page="blogs" data-icon="📝">
+                                <span class="nav-icon">📝</span>
+                                <span class="nav-text">Blogs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link" data-page="projects" data-icon="💻">
+                                <span class="nav-icon">💻</span>
+                                <span class="nav-text">Projects</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#misc" class="nav-link" data-page="misc" data-icon="🔗">
+                                <span class="nav-icon">🔗</span>
+                                <span class="nav-text">Misc</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <!-- Content Component -->
+            <main class="content" data-component="content">
+                <div class="content-container">
+                    <!-- Content will be dynamically loaded here -->
+                    <div class="loading-state">
+                        <div class="loading-spinner"></div>
+                        <p>Loading content...</p>
+                    </div>
+                </div>
+            </main>
+            
         </div>
-        <nav class="menu">
-          <h2>Secret Sauce</h2>
-          <ul>
-            <li>
-              <a href="home.html" > <span class="folder-icon">📁</span> Home </a>
-            </li>
-            <li>
-              <a href="blogs.html">
-                <span class="folder-icon">📁</span> Blogs
-              </a>
-            </li>
-            <li>
-              <a href="misc.html">
-                <span class="folder-icon">📁</span> Misc
-              </a>
-            </li>
-            <li>
-              <a href="projects.html">
-                <span class="folder-icon">📁</span> Projects
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <!-- Right Main Content Area -->
-      <main class="main-content">
-        <div class="header-image">
-          <img
-            src="./asset.png"
-            alt="Header Image"
-            style="width: 300px; height: auto"
-          />
-        </div>
-        <section class="intro">
-          <p>
-            I share my experience through daily writing,personal projects and
-            many more.
-          </p>
-          <p>
-            You are free to contact me via
-            <a href="https://x.com/zk_researcher" target="_blank">X</a>
-          </p>
-        </section>
-       
-      </main>
+        
+        <!-- Footer Component -->
+        <footer class="footer" data-component="footer">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2024 Karl. Built with passion and clean code.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/0xKarl98" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com/in/karl-developer" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:karl@example.com">Email</a>
+                </div>
+            </div>
+        </footer>
+        
     </div>
-    <script src="script.js"></script>
-  </body>
+    
+    <!-- Error State Template -->
+    <template id="error-template">
+        <div class="error-state">
+            <div class="error-icon">⚠️</div>
+            <h2>Content Not Available</h2>
+            <p>Sorry, we couldn't load the requested content. Please try refreshing the page.</p>
+            <button onclick="location.reload()" class="error-retry-btn">Refresh Page</button>
+        </div>
+    </template>
+    
+    <!-- Scripts -->
+    <script type="module" src="./src/scripts/main.js"></script>
+</body>
 </html>

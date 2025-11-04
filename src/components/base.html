@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl's Secret</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Component -->
+        <header class="header" data-component="header">
+            <div class="header-content">
+                <h1 class="site-title">Karl's Secret</h1>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search content">
+                        <button class="search-button" aria-label="Search">
+                            <span class="icon">🔍</span>
+                        </button>
+                    </div>
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <span class="icon theme-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+            <!-- Navigation Component -->
+            <nav class="navigation" data-component="navigation">
+                <div class="nav-content">
+                    <h2 class="nav-title">Secret Sauce</h2>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active" data-page="home">
+                                <span class="nav-icon">📁</span>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blogs" class="nav-link" data-page="blogs">
+                                <span class="nav-icon">📁</span>
+                                <span class="nav-text">Blogs</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#misc" class="nav-link" data-page="misc">
+                                <span class="nav-icon">📁</span>
+                                <span class="nav-text">Misc</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projects" class="nav-link" data-page="projects">
+                                <span class="nav-icon">📁</span>
+                                <span class="nav-text">Projects</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Content Component -->
+            <main class="content" data-component="content">
+                <div class="content-container">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </main>
+        </div>
+
+        <!-- Footer Component -->
+        <footer class="footer" data-component="footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Contact: <a href="https://x.com/zk_researcher" target="_blank" rel="noopener noreferrer">@zk_researcher</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="../scripts/main.js"></script>
+</body>
+</html>
