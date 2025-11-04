@@ -69,39 +69,20 @@ export const CONTENT_DATA = {
         subtitle: "Thoughts on software development, technology trends, and digital innovation",
         articles: [
             {
-                title: "The Art of Clean Code",
-                description: "Exploring principles and practices for writing maintainable, readable code that stands the test of time.",
-                date: "2024-01-15",
-                readTime: "8 min read",
-                tags: ["Clean Code", "Best Practices", "Software Engineering"]
-            },
-            {
-                title: "Modern Frontend Architecture",
-                description: "A deep dive into building scalable frontend applications with modern tools and frameworks.",
-                date: "2024-01-08",
-                readTime: "12 min read",
-                tags: ["Frontend", "Architecture", "React"]
-            },
-            {
-                title: "The Future of Web Development",
-                description: "Examining emerging trends and technologies that will shape the future of web development.",
-                date: "2023-12-20",
-                readTime: "10 min read",
-                tags: ["Web Development", "Future Tech", "Innovation"]
-            },
-            {
-                title: "Performance Optimization Strategies",
-                description: "Practical techniques for optimizing web application performance and user experience.",
-                date: "2023-12-05",
+                title: "Veil: Regulatory-compliant stablecoin design",
+                description: "Regulatory-compliant stablecoin design at Privacy-focused ZK-driven blockchain like Miden",
+                date: "2025-01-01",
                 readTime: "15 min read",
-                tags: ["Performance", "Optimization", "User Experience"]
+                tags: ["ZK", "Stablecoin", "Compliance", "Miden"],
+                link: "https://hackmd.io/YyX-ngvkSM-N1V5_OnLHMQ"
             },
             {
-                title: "Understanding System Design",
-                description: "Fundamental concepts and patterns for designing scalable and reliable systems.",
-                date: "2023-11-15",
-                readTime: "20 min read",
-                tags: ["System Design", "Architecture", "Scalability"]
+                title: "How Bulletproofs Leverage the Sum-check Protocol",
+                description: "Short note on Bulletproof",
+                date: "2025-01-01",
+                readTime: "10 min read",
+                tags: ["ZK", "Bulletproofs", "Cryptography"],
+                link: "https://hackmd.io/30uvG7yTQHChUIBIXAflSw"
             }
         ]
     },
@@ -109,50 +90,38 @@ export const CONTENT_DATA = {
     // Projects page content
     projects: {
         title: "Featured Projects",
-        subtitle: "A selection of projects that showcase my skills and interests",
+        subtitle: "I have contributed to a bunch of cutting-edge open-source projects",
         items: [
             {
-                title: "E-Commerce Platform",
-                description: "Full-stack e-commerce solution with modern UI, payment integration, and inventory management.",
-                technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+                title: "Noir Circuits",
+                description: "A monorepo of reusable Noir circuits.",
+                technologies: ["Noir"],
                 links: {
-                    github: "https://github.com/0xKarl98/ecommerce-platform",
-                    demo: "https://demo-ecommerce.com",
-                    live: "https://ecommerce-platform.vercel.app"
+                    github: "https://github.com/ModoriLabs/noir-web-prover-circuits"
                 }
             },
             {
-                title: "Task Management System",
-                description: "Collaborative task management application with real-time updates and team collaboration features.",
-                technologies: ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
+                title: "Ethereum Protocol",
+                description: "Modular, contributor-friendly and blazing-fast implementation of the Ethereum protocol, in Rust.",
+                technologies: ["Rust"],
                 links: {
-                    github: "https://github.com/0xKarl98/task-manager",
-                    demo: "https://demo-tasks.com"
+                    github: "https://github.com/paradigmxyz/reth"
                 }
             },
             {
-                title: "Personal Portfolio",
-                description: "This modular portfolio website built with modern web technologies and clean architecture.",
-                technologies: ["HTML5", "CSS3", "JavaScript", "ES6 Modules"],
+                title: "Cross-chain Transaction",
+                description: "Transparent cross-chain transaction routing for EIP-7702 accounts.",
+                technologies: ["Rust"],
                 links: {
-                    github: "https://github.com/0xKarl98/0xKarl98.github.io"
+                    github: "https://github.com/tcoratger/whir-p3"
                 }
             },
             {
-                title: "API Gateway Service",
-                description: "Microservices API gateway with authentication, rate limiting, and request routing.",
-                technologies: ["Go", "Docker", "Kubernetes", "Redis"],
+                title: "Noir Symmetric Crypto",
+                description: "A collection of symmetric cryptographic algorithms implemented in Noir, including AES-128, AES-256, and ChaCha20.",
+                technologies: ["Noir", "Cryptography"],
                 links: {
-                    github: "https://github.com/0xKarl98/api-gateway"
-                }
-            },
-            {
-                title: "Data Visualization Dashboard",
-                description: "Interactive dashboard for data visualization with charts, graphs, and real-time updates.",
-                technologies: ["React", "D3.js", "Python", "Flask"],
-                links: {
-                    github: "https://github.com/0xKarl98/data-dashboard",
-                    demo: "https://demo-dashboard.com"
+                    github: "https://github.com/ModoriLabs/noir-symmetric-crypto"
                 }
             }
         ]

@@ -243,7 +243,9 @@ export class ContentLoader {
                     ${data.articles.map(article => `
                         <article class="article-card">
                             <div class="article-header">
-                                <h3 class="article-title">${article.title}</h3>
+                                <h3 class="article-title">
+                                    ${article.link ? `<a href="${article.link}" target="_blank" rel="noopener noreferrer">${article.title}</a>` : article.title}
+                                </h3>
                                 <div class="article-meta">
                                     <time class="article-date">${ContentUtils.formatDate(article.date)}</time>
                                     <span class="article-read-time">${article.readTime}</span>
