@@ -101,7 +101,7 @@ export const CONTENT_DATA = {
                 }
             },
             {
-                title: "Ethereum Protocol",
+                title: "Reth",
                 description: "Modular, contributor-friendly and blazing-fast implementation of the Ethereum protocol, in Rust.",
                 technologies: ["Rust"],
                 links: {
